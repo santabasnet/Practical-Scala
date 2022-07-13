@@ -21,4 +21,10 @@ Training conducted for programmers in Semantro[semantro.com].
 - Practical - 13: Shapeless HList Demo
 
 
-
+```Scala
+object Main{
+  def main(args: Array[String]) = {
+        println("Thanks to Martin Odersky.")
+    }
+}
+```
