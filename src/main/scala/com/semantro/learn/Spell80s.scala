@@ -21,18 +21,14 @@ object Spell80s extends App {
     private val COMMA = ','
     private val SPACE = ' '
 
-
     case class Word(text: String, from: Int, to: Int) {
         def withChar(ch: Char, from: Int, to: Int) = Word(this.text + ch, from, to)
-
         def nonEmpty: Boolean = text.nonEmpty
-
         override def toString = f"{$text: ($from, $to)}"
     }
 
     object Word {
         def empty = Word(Spell80s.EMPTY, 0, 0)
-
         def of(text: String, from: Int, to: Int) = Word(text: String, from: Int, to: Int)
     }
 
